@@ -1,15 +1,17 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'dynamic_form', '1.1.4'
-gem 'flutie', '1.3.3'
-gem 'bourbon', '2.1.0'
-gem 'formtastic', '2.0.2'
-gem 'htmldiff', '0.0.1'
-gem 'pg', '0.13.2'
-gem 'rails', '3.2.6'
-gem 'thin', '1.3.1'
-gem 'yajl-ruby', '1.1.0', :require => 'yajl'
-gem "jquery-rails", "1.0.19"
+ruby '1.9.3'
+
+gem 'dynamic_form', '~> 1.1.4'
+gem 'flutie', '~> 1.3.3'
+gem 'bourbon', '~> 2.1.0'
+gem 'formtastic', '~> 2.0.2'
+gem 'htmldiff', '~> 0.0.1'
+gem 'pg', '~> 0.16.0'
+gem 'rails', '~> 3.2.6'
+gem 'thin', '~> 1.3.1'
+gem 'yajl-ruby', '~> 1.1.0', :require => 'yajl'
+gem "jquery-rails", "~> 1.0.19"
 
 group :assets do
   gem 'sass-rails', "~> 3.2.5"
@@ -28,7 +30,7 @@ end
 
 group :test do
   gem 'bourne', '1.1.1'
-  gem 'capybara-webkit', '0.12.1'
+  gem 'capybara-webkit', '1.0.0'
   gem 'cucumber-rails', '1.3.0', :require => false
   gem 'database_cleaner', '0.7.1'
   gem 'factory_girl_rails', '1.7.0'
