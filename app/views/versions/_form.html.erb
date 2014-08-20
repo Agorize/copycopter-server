@@ -20,11 +20,6 @@
   <%= form.input :content %>
 
     <li id='editor_mode'>
-      <% if localization.blurb.html? %>
-        <%= link_to 'Edit as HTML', '#', :id => 'edit_html' %>
-        <%= link_to 'Edit in simple mode', '#', :id => 'edit_simple',
-              :style => 'display: none' %>
-      <% end %>
     </li>
 <% end %>
 
@@ -43,9 +38,9 @@
             draftExplanation: <%= raw Yajl::Encoder.encode(t('blurb.first_draft_html')) %>,
           <% end %>
 
-          <% if prefer_html? %>
+          
             preferHtml: true,
-          <% end -%>
+          
 
           publishedExplanation: <%= raw Yajl::Encoder.encode(t('blurb.published_html')) %>
         });
