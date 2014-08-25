@@ -35,10 +35,10 @@ Editor = {
     };
 
     var unpublish = function() {
-      $('.explanation').html(options.draftExplanation);
-      $('.published').remove();
-      $('#version_published_input').show();
-      $('#version_published_false').attr('checked', 'checked');
+      // $('.explanation').html(options.draftExplanation);
+      // $('.published').remove();
+      // $('#version_published_input').show();
+      // $('#version_published_false').attr('checked', 'checked');
     };
 
     createEditor();
